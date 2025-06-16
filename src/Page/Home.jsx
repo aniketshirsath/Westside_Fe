@@ -14,7 +14,7 @@ function Home() {
 
   const fetchdata = () => {
     axios
-      .get("https://west-side-server-3.onrender.com/images")
+      .get("https://westside-be.onrender.com/images")
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err));
   };

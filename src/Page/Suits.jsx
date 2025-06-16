@@ -7,7 +7,7 @@ const Suits = () => {
     const [suits, setsuits] = useState([]);
 
     const suitsdata = () => {
-        axios.get('https://west-side-server-3.onrender.com/product', {
+        axios.get('https://westside-be.onrender.com/product', {
             params: {
                 category: "suits"
             }

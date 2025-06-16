@@ -7,7 +7,7 @@
    const [product, setProduct] = useState([]);
      const productdata = () => {
      axios
-       .get('https://west-side-server-3.onrender.com/product', {
+       .get('https://westside-be.onrender.com/product', {
         params: {
            category: 'Women',
          },

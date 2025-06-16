@@ -11,7 +11,7 @@ const Description = () => {
   const getData = () => {
     setLoading(true);
     axios
-      .get(`https://west-side-server-3.onrender.com/product/${id}`)
+      .get(`https://westside-be.onrender.com/product/${id}`)
       .then((res) => {
         setData(res.data);
         setLoading(false);
@@ -28,7 +28,7 @@ const Description = () => {
 
   const addToCart = () => {
     axios
-      .post("https://west-side-server-3.onrender.com/cart", {
+      .post("https://westside-be.onrender.com/cart", {
         productId: id,
         quantity: 1, // Adjust quantity as needed
         image: data.image && data.image[0],
